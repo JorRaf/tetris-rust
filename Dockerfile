@@ -10,6 +10,6 @@ RUN cargo build --release
 
 FROM debian:bookworm-slim
 
-COPY --from=builder /app/build/release/hello_world /usr/local/bin/hello_world
+COPY --from=builder /app/build/release/tetris_rust /usr/local/bin/tetris_rust
 
-CMD ["hello_world"]
+CMD ["tetris_rust"]
