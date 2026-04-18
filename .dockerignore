@@ -1,3 +1,4 @@
 .git
 .codex
-build
+/build
+/target
